@@ -12,7 +12,7 @@ STEP 2:
 -(Fixed Typos on class names - Sunday February 13) - Need to fix styling - Status & Country to be next to modified by and last modified, not under.
 
 STEP 3:
--Search has 1 letter delay
+-(Fixed Sunday February 13- Changed onKeyPress to onKeyUp) - Search has 1 letter delay
 -SVG X on search bar not rendering. Also need to code functionality to clear search field
 
 STEP 4:

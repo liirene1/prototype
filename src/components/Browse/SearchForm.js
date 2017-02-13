@@ -7,7 +7,7 @@ class SearchForm extends React.Component {
     this.props.searchItems(formProps);
   }
 
-  handleKeyPress(event) {
+  handleKeyUp(event) {
     this.handleFormSubmit(event.target.value);
   }
 
@@ -15,7 +15,7 @@ class SearchForm extends React.Component {
     const { handleSubmit, fields: {parameter}} = this.props;
 
     return (
-      <input {...parameter} type="text" id="textInput" className="search-box" onKeyPress={this.handleKeyPress.bind(this)}></input>
+      <input {...parameter} type="text" id="textInput" className="search-box" onKeyUp={this.handleKeyUp.bind(this)}></input>
     );
   }
 }
