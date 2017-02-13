@@ -30,10 +30,14 @@ class BarRight extends React.Component {
             <li>
               <a className="nav-mobile-toggler">
                 <span className="ui-icon i-primary i-medium icon-open">
-                  SVG
+                  <svg>
+                    <use xlinkHref="#i-menu"></use>
+                  </svg>
                 </span>
                 <span className="ui-icon i-primary i-medium icon-close">
-                  SVG
+                  <svg>
+                    <use xlinkHref="#i-close"></use>
+                  </svg>
                 </span>
               </a>
             </li>
