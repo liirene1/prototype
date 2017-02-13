@@ -13,7 +13,8 @@ STEP 2:
 
 STEP 3:
 -(Fixed Sunday February 13- Changed onKeyPress to onKeyUp) - Search has 1 letter delay
--SVG X on search bar not rendering. Also need to code functionality to clear search field
+-(Fixed typos Sunday February 13) SVG X on search bar not rendering.
+-(Done - Sunday, February 13) Once SVG renders, need to code functionality to clear search field
 
 STEP 4:
 -Fix CSS to look the same as Zeplin profile page

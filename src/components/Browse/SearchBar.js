@@ -2,7 +2,6 @@ import React, { PropTypes } from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as itemActions from '../../actions/itemActions';
-import SearchForm from './SearchForm'
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -10,7 +9,12 @@ class SearchBar extends React.Component {
   }
 
   handleClick() {
-    console.log("hit X on search");
+    document.getElementById("textInput").value = "";
+    this.props.actions.loadItems();
+  }
+
+  handleKeyUp(event) {
+    this.props.actions.searchItems(event.target.value);
   }
 
   render() {
@@ -22,10 +26,10 @@ class SearchBar extends React.Component {
               <use xlinkHref="#i-search"></use>
             </svg>
           </span>
-          <SearchForm />
-          <span onClick={this.handleClick()} className="ui-icon i-medium-gray i-base search-box-close-icon">
+          <input type="text" id="textInput" className="search-box" onKeyUp={this.handleKeyUp.bind(this)}></input>
+          <span onClick={this.handleClick.bind(this)} className="ui-icon i-medium-gray i-base search-box-close-icon">
             <svg>
-              <use xlinkHref="i-close-large"></use>
+              <use xlinkHref="#i-close-large"></use>
             </svg>
           </span>
         </div>
