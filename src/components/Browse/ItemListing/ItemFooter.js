@@ -9,7 +9,7 @@ class ItemFooter extends React.Component {
     const {item} = this.props;
 
     return (
-      <div className="rows show-for-medium">
+      <div className="row show-for-medium">
         <div className="columns small-12 medium-6">
           <p className="slat-attr-wrapper">
             <span className="slat-attr-key">Modified By:</span>

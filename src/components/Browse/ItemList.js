@@ -8,7 +8,7 @@ class ItemList extends React.Component {
 
   render() {
     return (
-      <div class="browse-slat-set">
+      <div className="browse-slat-set">
         {this.props.items.map(item =>
           <ItemListing key={item.id} item={item} />
         )}
